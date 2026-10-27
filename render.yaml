@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: fodinha
+    runtime: node
+    plan: free
+    buildCommand: echo pronto
+    startCommand: node server.js
+    healthCheckPath: /healthz
